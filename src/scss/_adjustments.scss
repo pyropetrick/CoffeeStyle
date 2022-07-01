@@ -67,10 +67,7 @@ select {
 }
 
 body {
-    // @include fontStyle($fontRaleway, $fontNormal, 18);
-  // &.lock {
-  //   overflow: hidden;
-  // }
+    @include fontStyle($fontKarla, $fontRegular, 16);
 }
 
 .container {
@@ -79,7 +76,7 @@ body {
   width: var(--large-container);
 
   @include mediaTablet {
-    // width: 984px;
+    width: 984px;
   }
   @include mediaMobile {
     width: 100%;
