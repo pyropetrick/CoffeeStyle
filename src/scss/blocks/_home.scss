@@ -1,0 +1,29 @@
+.home {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // padding: 250px 75px;
+        height: 100%;
+        
+    }
+    &__text {
+        @include fontSize(12);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__title {
+        @include fontSize(47);
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        @include fontSize(17);
+        margin-bottom: 50px;
+    }
+    height: 100vh;
+    background-color: $colorHome;
+    color: $colorWhite;
+    background: url(../images/bg/bgHome.jpg) center no-repeat;
+    background-size: cover;
+}

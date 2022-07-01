@@ -27,6 +27,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-weight: 400;
 }
 
 // Выставляем основные настройки по-умолчанию для body
@@ -45,6 +46,7 @@ ol {
 //  Элементы a, у которых нет класса, сбрасываем до дефолтных стилей
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 // Упрощаем работу с изображениями
@@ -68,6 +70,7 @@ select {
 
 body {
     @include fontStyle($fontKarla, $fontRegular, 16);
+    color: $colorPrimary;
 }
 
 .container {

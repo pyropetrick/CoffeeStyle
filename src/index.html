@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
   <title>CoffeeStyle</title>
 </head>
 
@@ -14,7 +14,8 @@
   <header class="header">
     <div class="container">
       <div class="header__logo">
-        <a href="#" class="header__logo-link"><img src="./images/logo/Frame.png" alt="logo" class="header__logo-img"></a>  
+        <a href="#" class="header__logo-link"><img src="./images/logo/Frame.png" alt="logo"
+            class="header__logo-img"></a>
       </div>
       <nav class="menu">
         <ul class="menu__list">
@@ -25,8 +26,10 @@
           <li class="menu__list-item"><a href="#" class="menu__list-link">Contact</a></li>
           <li class="menu__list-item"><a href="#" class="menu__list-link">Styleguide</a></li>
           <li class="menu__list-item">
-            <div  class="menu__basket">
-              <img src="./images/basket/basket.png" alt="basket" class="menu__basket-img">
+            <div class="menu__basket">
+              <a href="#">
+                <img src="./images/basket/basket.png" alt="basket" class="menu__basket-img">
+              </a>
             </div>
             <a href="#" class="menu__list-link">Cart</a>
             <div class="menu__counter">
@@ -37,8 +40,133 @@
       </nav>
     </div>
   </header>
-  <section class="home"></section>
-  <section class="products"></section>
+  <section class="home">
+    <div class="container">
+      <p class="home__text">Best place to buy design</p>
+      <h1 class="home__title">Coffee Mugs</h1>
+      <p class="home__subtitle">The most versatile furniture system ever created. Designed to fit your life, made to
+        move and grow.
+      </p>
+      <button type="button" class="button button--home">Explore Our Products</button>
+    </div>
+  </section>
+  <section class="shop">
+    <div class="container">
+      <div class="shop__description-wrapper">
+        <h2 class="shop__description-title">Even the all-powerful Pointing has no control about the blind texts.</h2>
+        <p class="shop__description-text">It is a paradisematic country, in which roasted parts of sentences fly into
+          your mouth.
+          Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One
+          day
+          however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+        </p>
+        <a href="#" class="shop__description-link">Read the full Story</a>
+      </div>
+      <div class="shop__title-box">
+        <div class="separator"></div>
+        <h3 class="shop__title">Featured Mugs</h3>
+        <div class="separator"></div>
+      </div>
+      <div class="shop__product-list">
+        <div class="shop__product-list-item">
+          <img src="./images/products/feautures/pinkPremiumCeramic.png" alt="pink Premium Ceramic"
+            class="shop__features-img">
+          <p class="shop__product-name">Pink Premium Ceramic</p>
+          <p class="price">$ 99.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/feautures/goldenDesignersMug.png" alt="golden Designers Mug"
+            class="shop__features-img">
+          <p class="shop__product-name">Golden Designers Mug</p>
+          <p class="price"> <span class="price-discount">$50.00</span>
+            <span class="price-full">$ 69.00 USD</span>
+          </p>
+        </div>
+      </div>
+      <div class="shop__title-box">
+        <div class="separator"></div>
+        <h3 class="shop__title">More Products</h3>
+        <div class="separator"></div>
+      </div>
+      <div class="shop__product-list">
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/redCup.png" alt="Red Love Cup" class="shop__product-img">
+          <p class="shop__product-name">Red Love Cup</p>
+          <p class="price"><span class="price-discount">$25.00</span>
+            <span class="price-full">$ 37.00 USD</span>
+          </p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/blackCup.png" alt="Black Tea Cup" class="shop__product-img">
+          <p class="shop__product-name">Black Tea Cup</p>
+          <p class="price"><span class="price-discount">$15.00</span>
+            <span class="price-full">$ 29.00 USD</span>
+          </p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/bwEssentialsMug.png" alt="B&W Essentials Mug" class="shop__product-img">
+          <p class="shop__product-name">B&ampW Essentials Mug</p>
+          <p class="price"> <span class="price-sold">$ 19.00 USD</span></p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/winterMug.png" alt="Winter Style Mug" class="shop__product-img">
+          <p class="shop__product-name">Winter Style Mug</p>
+          <p class="price">$ 25.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/ceramicTea.png" alt="Ceramic Tea" class="shop__product-img">
+          <p class="shop__product-name">Ceramic Tea</p>
+          <p class="price">$ 46.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/noHandleCup.png" alt="No Handle Bar Cup" class="shop__product-img">
+          <p class="shop__product-name">No Handle Bar Cup</p>
+          <p class="price">$ 34.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/espressoCup.png" alt="Espresso Cup by Mugs.co" class="shop__product-img">
+          <p class="shop__product-name">Espresso Cup by Mugs.co</p>
+          <p class="price">$ 25.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/feautures/pinkPremiumCeramic.png" alt="pink Premium Ceramic"
+            class="shop__product-img">
+          <p class="shop__product-name">Pink Premium Ceramic</p>
+          <p class="price">$ 99.00 USD</p>
+        </div>
+        <div class="shop__product-list-item">
+          <img src="./images/products/cups/summerCup.png" alt="Summer Designer Cup" class="shop__product-img">
+          <p class="shop__product-name">Summer Designer Cup</p>
+          <p class="price">$ 29.00 USD</p>
+        </div>
+      </div>
+      <div class="shop__title-box">
+        <div class="separator"></div>
+        <h3 class="shop__title">Buy 2 mugs and get a coffee magazine free</h3>
+        <div class="separator"></div>
+      </div>
+      <div class="shop-offer">
+        <div class="shop-offer__images">
+          <div class="shop-offer__image-wrapper">
+            <img src="./images/products/shop/notebook.png" alt="notebook" class="shop-offer__image">
+          </div>
+          <div class="shop-offer__image-wrapper">
+            <img src="./images/products/shop/cupSecond.png" class="shop-offer__image shop-offer__image--small" alt="cup">
+            <img src="./images/products/shop/cupFirst.png" class="shop-offer__image shop-offer__image--small" alt="cup">
+          </div>
+        </div>
+        <div class="shop-offer__desc">
+          <p class="shop-offer__desc-title-short">Premium Offer</p>
+          <h3 class="shop-offer__desc-title">Get our Coffee Magazine</h3>
+          <p class="shop-offer__desc-text">The most versatile furniture system ever created. Designed to fit your life.
+          </p>
+          <button type="button" class="button button--start">Start Shopping</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
   <section class="banner"></section>
   <section class="blog"></section>
   <section class="contact"></section>

@@ -18,6 +18,9 @@
 @mixin fontSize($count) {
     font-size: calc($count / 16) + rem;
 }
+@mixin LineHeight($count) {
+	line-height: calc($count / 16) + rem;
+}
 
 
 @mixin fontStyle($fontFam, $fontWh, $size) {

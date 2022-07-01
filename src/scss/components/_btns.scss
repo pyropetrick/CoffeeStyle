@@ -1,0 +1,21 @@
+.button {
+    &--home {
+        padding: 2px 30px;
+        color: $colorPrimary;
+    }
+    &--start {
+        color: $colorWhite;
+        padding: 5px 40px;
+        background-color: $colorPrimary;
+        @include fontSize(12);
+    }
+    &:hover {
+        @extend %cursorPointer;
+        font-weight: bold;
+    }
+    &:active {
+        font-weight: bold;
+    }
+    text-transform: uppercase;
+    @extend %transitionAll;
+}

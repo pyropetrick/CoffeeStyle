@@ -1,0 +1,107 @@
+.shop {
+    &__title {
+        &-box {
+            @extend %flexCenter;
+            margin: 100px 0; 
+            gap: 15px;
+        }
+        @include fontSize(18);
+        @include textUpCenter(uppercase,center);
+    }
+    &__description {
+        &-wrapper {
+            padding: 0 140px;
+            text-align: center;
+        }
+        &-title {
+            padding: 0 40px;
+            margin-bottom: 16px;
+            @include fontSize(28);
+        }
+        &-text {
+            @include LineHeight(28);
+            color: $colorText;
+            margin-bottom: 20px;
+        }
+        &-link {
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: rgba(162, 95, 75, 0.2);
+            }
+            @include fontSize(15);
+            color: $colorDiscountPrice;
+            position: relative;
+            padding: 5px;
+        }
+    }
+    &__features {
+        &-img {
+            max-width: 460px;
+            max-height: 540px;
+        }
+    }
+    &__product {
+        &-img {
+            width: 300px;
+            height: 380px;
+        }
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px 20px;
+            text-align: center;
+        }
+        &-name {
+            @include fontSize(20);
+            margin-top: 35px;
+        }
+    }
+    &-offer {
+        &__images {
+            display: flex;
+            gap: 20px;
+        }
+        &__image {
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            &--small {
+                max-width: 160px;
+                max-height: 130px;
+            }
+            max-width: 280px;
+            max-height: 280px;
+        }
+        &__desc {
+            &-title-short {
+                @include fontSize(12);
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            &-title {
+                @include fontSize(36);
+                @include LineHeight(50);
+                padding-right: 300px;
+                margin-bottom: 15px;
+            }
+            &-text {
+                @include LineHeight(28);
+                margin-bottom: 30px;
+                padding-right: 300px;
+            }
+            padding-left: 60px;
+        }
+        display: flex;
+        gap: 20px;
+    }
+
+    padding: 120px 0;
+}

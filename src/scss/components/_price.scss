@@ -1,0 +1,17 @@
+.price {
+    &-discount {
+        color: $colorDiscountPrice;
+        @include fontSize(19);
+    }
+    &-full {
+        color: $colorFullPrice;
+        text-decoration: line-through;
+        text-decoration-color: $colorFullPrice;
+    }
+    &-sold {
+        text-decoration: line-through;
+        text-decoration-color: $colorFullPrice;
+    }
+    margin-top: 5px;
+    color: $colorText;
+}
