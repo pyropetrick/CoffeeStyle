@@ -1,0 +1,9 @@
+.input {
+    padding: 15px 40px;
+    @include fontSize(12);
+    @include textUpCenter(uppercase, center);
+    color: $colorWhite;
+    width: 350px;
+    background-color: transparent;
+    border: 1px solid #2F303E;
+}

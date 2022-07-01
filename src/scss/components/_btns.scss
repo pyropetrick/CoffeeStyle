@@ -7,7 +7,9 @@
         color: $colorWhite;
         padding: 5px 40px;
         background-color: $colorPrimary;
-        @include fontSize(12);
+    }
+    &--subscribe {
+        padding: 15px 25px;
     }
     &:hover {
         @extend %cursorPointer;
@@ -16,6 +18,8 @@
     &:active {
         font-weight: bold;
     }
+    letter-spacing: 2px;
     text-transform: uppercase;
     @extend %transitionAll;
+    @include fontSize(12);
 }

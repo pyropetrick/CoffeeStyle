@@ -1,5 +1,10 @@
 .separator {
+    &--grey {
+        background-color: rgba(210, 210, 213, 0.1);
+    }
+    &--white {
+        background-color: #ECECED;
+    }
     height: 1px;
     width: 30px;
-    background-color: #ECECED;
 }

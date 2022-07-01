@@ -1,13 +1,4 @@
 .shop {
-    &__title {
-        &-box {
-            @extend %flexCenter;
-            margin: 100px 0; 
-            gap: 15px;
-        }
-        @include fontSize(18);
-        @include textUpCenter(uppercase,center);
-    }
     &__description {
         &-wrapper {
             padding: 0 140px;

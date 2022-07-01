@@ -1,0 +1,17 @@
+.contact {
+    .container {
+        @extend %flexCenter;
+        flex-direction: column;
+    }
+    &__title {
+        @include fontSize(36);
+        color: $colorWhite;
+        margin-bottom: 25px;
+    }
+    &__form {
+        display: flex;
+        gap: 10px;
+    }
+    padding: 85px 0;
+    background-color: $colorPrimary;
+}

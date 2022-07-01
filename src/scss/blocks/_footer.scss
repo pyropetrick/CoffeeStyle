@@ -1,0 +1,89 @@
+.footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-info {
+        &__logo {
+            &-img {
+                max-width: 110px;
+                max-height: 24px;
+            }
+            margin-bottom: 20px;
+        }
+        max-width: 300px;
+        &__text {
+            color: $colorText;
+            @include fontSize(14);
+            @include LineHeight(22);
+            margin-bottom: 80px;
+        }
+        &__copy {
+            color: $colorCopy;
+            @include fontSize(14);
+        }
+    }
+    &-menu {
+        &__list {
+            &-item {
+                margin-bottom: 10px;
+            }
+            &-link {
+                &:hover {
+                    color: #000;
+                    font-weight: bold;
+                }
+                &:active {
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+            @include fontSize(13);
+            color: $colorText;
+        }
+    }
+    &-socials {
+        &__list {
+            &-item {
+                margin-bottom: 10px;
+            }
+            &-link {
+                &:hover {
+                    color: #000;
+                    font-weight: bold;
+                }
+                &:active {
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+            @include fontSize(14);
+            color: $colorText;
+        }
+    }
+    &-contact {
+        &__subtitle {
+            margin-bottom: 15px;
+            @include fontSize(14);
+            color: $colorText;
+        }
+        &__email {
+            display: block;
+            margin-bottom: 75px;
+            @include fontSize(23);
+            color: $colorPrimary;
+        }
+        &__powered {
+            
+            @include fontSize(14);
+            color: $colorCopy;
+        }
+    }
+    &__title {
+        @include fontSize(12);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    padding: 100px 0 50px;
+}

@@ -1,0 +1,32 @@
+.blog {
+    &-list {
+        &__post {
+            &-img {
+                max-width: 300px;
+                max-height: 300px;
+                margin-bottom: 30px;
+            }
+            &-title {
+                @include fontSize(20);
+                @include LineHeight(32);
+                margin-bottom: 10px;
+            }
+            &-text {
+                @include LineHeight(28);
+                margin-bottom: 15px;
+                color: $colorText;
+            }
+            &-data {
+                @include fontSize(12);
+                text-transform: uppercase;
+            }
+            max-width: 300px;
+        }
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    padding: 100px 0 150px;
+
+}
