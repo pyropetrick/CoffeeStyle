@@ -1,0 +1,45 @@
+// fonts
+@import './fonts';
+
+// variables
+@import './vars';
+
+// mixins
+@import './mixins';
+
+// extends 
+@import './extends';
+
+// reset + standart style
+@import './adjustments';
+
+
+// components
+// @import './components/btns';
+// @import './components/sep';
+// @import './components/input';
+// @import './components/title';
+// @import './components/icons';
+
+// Blocks
+
+// header
+@import './blocks/header';
+
+// home
+@import './blocks/home';
+
+// products
+@import './blocks/products';
+
+// blog
+@import './blocks/blog';
+
+// banner
+@import './blocks/banner';
+
+// contact
+@import './blocks/contact';
+
+// footer
+@import './blocks/footer';

@@ -7,6 +7,7 @@ const autoprefix = require('gulp-autoprefixer');
 const imageMin = require('gulp-imagemin');
 const del = require('del');
 const htmlMin = require('gulp-htmlmin');
+const csso = require('gulp-csso');
 
 function clearDist() {
   return del('dist')
@@ -55,7 +56,7 @@ function scripts() {
 }
 
 function scss() {
-  return src('src/scss/**/*.scss')
+  return src('src/scss/main.scss')
     .pipe(sass({
       outputStyle: 'compressed'
     }))
@@ -63,24 +64,30 @@ function scss() {
       overrideBrowserslist: ['last 10 version'],
       grid: true
     }))
-    .pipe(concat('main.min.css'))
+    .pipe(concat('main.css'))
     .pipe(dest('src/styles/'))
     .pipe(sync.stream())
 }
 
 function watching() {
   watch(['src/scss/**/*.scss'], scss)
-  watch(['src/js/**/*.js','!app/js/main.min.js'], scripts)
+  watch(['src/js/**/*.js','!src/js/main.min.js'], scripts)
   watch(['src/**.html']).on('change',sync.reload)
 }
 
 function build() {
   return src([
-    'src/css/style.min.css',
+    'src/css/main.css',
     'src/fonts/**/*',
     'src/js/main.min.js',
   ], {base: 'src'})
     .pipe(dest('dist'))
+}
+
+function minCss() {
+  return src('src/styles/**.css')
+  .pipe(csso())
+  .pipe(dest('dist/styles'))
 }
 
 exports.scss = scss;
@@ -91,4 +98,4 @@ exports.html = html;
 exports.images = images;
 exports.clearDist = clearDist;
 exports.default = parallel(html, scss, scripts,browserSync, watching);  
-exports.build = series(clearDist,html,images, build);
+exports.build = series(clearDist,minCss,html,images, build);

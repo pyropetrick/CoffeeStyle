@@ -1,0 +1,13 @@
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%transitionAll {
+    transition: all .3s  ease-in-out;
+}
+
+%cursorPointer {
+    cursor: pointer;
+}
