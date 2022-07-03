@@ -8,5 +8,6 @@ function onProductClick(item) {
     item.addEventListener("click", function() {
         count = count + 1;
         counter.innerHTML = count;
+        String(counter.innerHTML);
     })
 }
