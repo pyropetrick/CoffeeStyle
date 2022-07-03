@@ -24,10 +24,13 @@
                 height: 2px;
                 background-color: rgba(162, 95, 75, 0.2);
             }
-            @include fontSize(15);
+            @include fontSize(16);
             color: $colorDiscountPrice;
             position: relative;
             padding: 5px;
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
     }
     &__features {

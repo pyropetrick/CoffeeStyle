@@ -7,9 +7,12 @@
                 margin-bottom: 30px;
             }
             &-title {
-                @include fontSize(20);
+                @include fontSize(24);
                 @include LineHeight(32);
                 margin-bottom: 10px;
+                @include mediaTablet {
+                    @include fontSize(20);
+                }
             }
             &-text {
                 @include LineHeight(28);
@@ -17,8 +20,11 @@
                 color: $colorText;
             }
             &-data {
-                @include fontSize(12);
+                @include fontSize(14);
                 text-transform: uppercase;
+                @include mediaTablet {
+                    @include fontSize(12);
+                }
             }
             max-width: 300px;
         }

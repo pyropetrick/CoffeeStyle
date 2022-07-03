@@ -21,5 +21,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     @extend %transitionAll;
-    @include fontSize(12);
+    @include fontSize(16);
+    @include mediaTablet {
+        @include fontSize(12);
+    }
 }

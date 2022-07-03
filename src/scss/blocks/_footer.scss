@@ -14,13 +14,19 @@
         max-width: 300px;
         &__text {
             color: $colorText;
-            @include fontSize(14);
+            @include fontSize(16);
             @include LineHeight(22);
             margin-bottom: 80px;
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
         &__copy {
             color: $colorCopy;
-            @include fontSize(14);
+            @include fontSize(16);
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
     }
     &-menu {
@@ -38,8 +44,11 @@
                     font-weight: bold;
                 }
             }
-            @include fontSize(13);
+            @include fontSize(16);
             color: $colorText;
+            @include mediaTablet {
+                @include fontSize(13);
+            }
         }
     }
     &-socials {
@@ -57,33 +66,45 @@
                     font-weight: bold;
                 }
             }
-            @include fontSize(14);
+            @include fontSize(16);
             color: $colorText;
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
     }
     &-contact {
         &__subtitle {
             margin-bottom: 15px;
-            @include fontSize(14);
+            @include fontSize(16);
             color: $colorText;
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
         &__email {
             display: block;
             margin-bottom: 75px;
             @include fontSize(23);
             color: $colorPrimary;
+            
         }
         &__powered {
-            
-            @include fontSize(14);
+            @include fontSize(16);
             color: $colorCopy;
+            @include mediaTablet {
+                @include fontSize(14);
+            }
         }
     }
     &__title {
-        @include fontSize(12);
+        @include fontSize(16);
         letter-spacing: 2px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        @include mediaTablet {
+            @include fontSize(12);
+        }
     }
     padding: 100px 0 50px;
 }

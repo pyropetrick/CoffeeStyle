@@ -49,7 +49,10 @@
             }
             margin-right: 30px;
             text-transform: uppercase;
-            @include fontSize(12);
+            @include fontSize(14);
+            @include mediaTablet {
+                @include fontSize(12);
+            }
             
         }
         &-link {

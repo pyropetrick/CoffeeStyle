@@ -1,7 +1,10 @@
 .price {
     &-discount {
         color: $colorDiscountPrice;
-        @include fontSize(19);
+        @include fontSize(20);
+        @include mediaTablet {
+            @include fontSize(18);
+        }
     }
     &-full {
         color: $colorFullPrice;

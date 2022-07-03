@@ -9,17 +9,22 @@
         
     }
     &__text {
-        @include fontSize(12);
+        @include fontSize(14);
         text-transform: uppercase;
         margin-bottom: 15px;
+        @include mediaTablet {
+            @include fontSize(12);
+        }
     }
     &__title {
-        @include fontSize(47);
+        @include fontSize(48);
         margin-bottom: 15px;
     }
     &__subtitle {
-        @include fontSize(17);
         margin-bottom: 50px;
+        @include mediaTablet {
+            @include fontSize(17);
+        }
     }
     height: 100vh;
     background-color: $colorHome;

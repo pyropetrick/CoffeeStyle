@@ -69,8 +69,11 @@ select {
 }
 
 body {
-    @include fontStyle($fontKarla, $fontRegular, 16);
+    @include fontStyle($fontKarla, $fontRegular, 18);
     color: $colorPrimary;
+    @include mediaTablet {
+      @include fontSize(16);
+    }
 }
 
 .container {
