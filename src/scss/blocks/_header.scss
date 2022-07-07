@@ -52,17 +52,6 @@
             &:hover::before {
                 opacity: 1;
             }
-            margin-right: 30px;
-            padding-bottom: 4px;
-            position: relative;
-            text-transform: uppercase;
-            @include fontSize(14);
-            @include mediaTablet {
-                @include fontSize(12);
-            }
-            
-        }
-        &-link {
             &:hover {
                 color: #000;
                 font-weight: bold;
@@ -70,6 +59,14 @@
             &:active {
                 color: #000;
                 font-weight: bold;
+            }
+            margin-right: 30px;
+            padding-bottom: 4px;
+            position: relative;
+            text-transform: uppercase;
+            @include fontSize(14);
+            @include mediaTablet {
+                @include fontSize(12);
             }
             @extend %transitionAll;
         }
