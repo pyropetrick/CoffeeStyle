@@ -31,23 +31,30 @@
     &__list {
         &-item {
             &:last-child {
-                &::before {
-                    content: '';
-                    height: 2px;
-                    width: 100%;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    background-color:rgba(162, 95, 75, 0.3);
-                }
-                padding-bottom: 4px;
-                position: relative;
                 margin: 0;
                 display: flex;
                 align-items:center;
                 gap: 10px;
             }
+            &::before {
+                content: '';
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                // background-color:rgba(162, 95, 75, 0.3);
+                background-color: #000;
+                @extend %transitionAll;
+                
+            }
+            &:hover::before {
+                opacity: 1;
+            }
             margin-right: 30px;
+            padding-bottom: 4px;
+            position: relative;
             text-transform: uppercase;
             @include fontSize(14);
             @include mediaTablet {

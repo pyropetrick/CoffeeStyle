@@ -22,7 +22,12 @@
                 left: 0;
                 width: 100%;
                 height: 2px;
+                opacity: 0;
                 background-color: rgba(162, 95, 75, 0.2);
+                @extend %transitionAll;
+            }
+            &:hover::before {
+                opacity: 1;
             }
             @include fontSize(16);
             color: $colorDiscountPrice;
