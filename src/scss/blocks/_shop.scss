@@ -33,6 +33,7 @@
             color: $colorDiscountPrice;
             position: relative;
             padding: 5px;
+            
             @include mediaTablet {
                 @include fontSize(14);
             }
@@ -88,18 +89,18 @@
             &-title {
                 @include fontSize(36);
                 @include LineHeight(50);
-                padding-right: 300px;
+                // width: 300px;
                 margin-bottom: 15px;
             }
             &-text {
                 @include LineHeight(28);
                 margin-bottom: 30px;
-                padding-right: 300px;
+                // width: 300px;
             }
-            padding-left: 60px;
         }
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 30px;
     }
 
     padding: 120px 0;
