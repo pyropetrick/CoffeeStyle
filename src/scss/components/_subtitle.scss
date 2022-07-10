@@ -1,5 +1,13 @@
 .subtitle {
+    letter-spacing: 2px;
+    @include fontSize(18);
+    @include textUpCenter(uppercase,center);
+    
     &-seps {
+        @include flexCenter;
+        margin: 100px 0; 
+        gap: 15px;
+
         &--blog {
             margin: 0 0 100px 0;
         }
@@ -7,11 +15,7 @@
             margin: 0 0 15px;
             color: $colorWhite;
         }
-        @extend %flexCenter;
-        margin: 100px 0; 
-        gap: 15px;
+        
     }
-    letter-spacing: 2px;
-    @include fontSize(18);
-    @include textUpCenter(uppercase,center);
+    
 }

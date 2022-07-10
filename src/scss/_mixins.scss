@@ -1,7 +1,39 @@
 :root {
 	--large-container: 1200px;
 }
+@mixin flexDir($direction) {
+	display: flex;
+	flex-direction: $direction;
+}
 
+@mixin flexX($justCont) {
+	display: flex;
+	justify-content: $justCont;
+}
+@mixin flexY($align) {
+	display: flex;
+	align-items: $align;
+}
+
+@mixin flexXY($justCont, $align) {
+	display: flex;
+	justify-content: $justCont;
+	align-items: $align
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transitionAll {
+    transition: all .3s  ease-in-out;
+}
+
+@mixin cursorPointer {
+    cursor: pointer;
+}
 
 @mixin textUpCenter($textUp,$textCenter) {
     text-transform: $textUp;

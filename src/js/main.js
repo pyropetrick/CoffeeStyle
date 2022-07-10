@@ -6,8 +6,7 @@ product.forEach(onProductClick);
 
 function onProductClick(item) {
     item.addEventListener("click", function() {
-        count = count + 1;
+        count++;
         counter.innerHTML = count;
-        String(counter.innerHTML);
     })
 }

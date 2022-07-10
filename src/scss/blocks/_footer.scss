@@ -1,22 +1,28 @@
 .footer {
+    padding: 100px 0 50px;
+
     .container {
-        display: flex;
-        justify-content: space-between;
+        @include flexX(space-between);
     }
     &-info {
+        max-width: 300px;
+
         &__logo {
+            margin-bottom: 20px;
+
             &-img {
                 max-width: 110px;
                 max-height: 24px;
             }
-            margin-bottom: 20px;
+            
         }
-        max-width: 300px;
+        
         &__text {
             color: $colorText;
             @include fontSize(16);
             @include LineHeight(22);
             margin-bottom: 80px;
+            
             @include mediaTablet {
                 @include fontSize(14);
             }
@@ -24,6 +30,7 @@
         &__copy {
             color: $colorCopy;
             @include fontSize(16);
+            
             @include mediaTablet {
                 @include fontSize(14);
             }
@@ -31,6 +38,13 @@
     }
     &-menu {
         &__list {
+            @include fontSize(16);
+            color: $colorText;
+            
+            @include mediaTablet {
+                @include fontSize(13);
+            }
+
             &-item {
                 margin-bottom: 10px;
             }
@@ -44,15 +58,18 @@
                     font-weight: bold;
                 }
             }
-            @include fontSize(16);
-            color: $colorText;
-            @include mediaTablet {
-                @include fontSize(13);
-            }
+            
         }
     }
     &-socials {
         &__list {
+            @include fontSize(16);
+            color: $colorText;
+            
+            @include mediaTablet {
+                @include fontSize(14);
+            }
+
             &-item {
                 margin-bottom: 10px;
             }
@@ -66,11 +83,7 @@
                     font-weight: bold;
                 }
             }
-            @include fontSize(16);
-            color: $colorText;
-            @include mediaTablet {
-                @include fontSize(14);
-            }
+            
         }
     }
     &-contact {
@@ -78,6 +91,7 @@
             margin-bottom: 15px;
             @include fontSize(16);
             color: $colorText;
+            
             @include mediaTablet {
                 @include fontSize(14);
             }
@@ -87,11 +101,15 @@
             margin-bottom: 75px;
             @include fontSize(23);
             color: $colorPrimary;
+            &:hover {
+                @include cursorPointer;
+            }
             
         }
         &__powered {
             @include fontSize(16);
             color: $colorCopy;
+            
             @include mediaTablet {
                 @include fontSize(14);
             }
@@ -102,9 +120,10 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        
         @include mediaTablet {
             @include fontSize(12);
         }
     }
-    padding: 100px 0 50px;
+    
 }

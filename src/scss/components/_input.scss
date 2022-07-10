@@ -6,6 +6,7 @@
     width: 350px;
     background-color: transparent;
     border: 1px solid #2F303E;
+    
     @include mediaTablet {
         @include fontSize(12);
     }

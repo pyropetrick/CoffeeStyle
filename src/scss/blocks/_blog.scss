@@ -1,6 +1,19 @@
 .blog {
+    padding: 100px 0 150px;
+
     &-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        
         &__post {
+            max-width: 300px;
+            &-link {
+                &:hover {
+                    @include cursorPointer;
+                }
+            }
             &-img {
                 max-width: 300px;
                 max-height: 300px;
@@ -10,6 +23,7 @@
                 @include fontSize(24);
                 @include LineHeight(32);
                 margin-bottom: 10px;
+                
                 @include mediaTablet {
                     @include fontSize(20);
                 }
@@ -22,17 +36,15 @@
             &-data {
                 @include fontSize(14);
                 text-transform: uppercase;
+                
                 @include mediaTablet {
                     @include fontSize(12);
                 }
             }
-            max-width: 300px;
+            
         }
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
+        
     }
-    padding: 100px 0 150px;
+    
 
 }

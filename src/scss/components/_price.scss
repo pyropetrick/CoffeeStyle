@@ -1,7 +1,11 @@
 .price {
+    margin-top: 5px;
+    color: $colorText;
+
     &-discount {
         color: $colorDiscountPrice;
         @include fontSize(20);
+        
         @include mediaTablet {
             @include fontSize(18);
         }
@@ -15,6 +19,5 @@
         text-decoration: line-through;
         text-decoration-color: $colorFullPrice;
     }
-    margin-top: 5px;
-    color: $colorText;
+    
 }

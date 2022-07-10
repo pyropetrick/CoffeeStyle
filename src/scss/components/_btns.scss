@@ -1,4 +1,20 @@
 .button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include transitionAll;
+    @include fontSize(16);
+
+    &:hover {
+        @include cursorPointer;
+        font-weight: bold;
+    }
+    &:active {
+        font-weight: bold;
+    }
+    
+    @include mediaTablet {
+        @include fontSize(12);
+    }
     &--home {
         padding: 2px 30px;
         color: $colorPrimary;
@@ -11,18 +27,6 @@
     &--subscribe {
         padding: 15px 25px;
     }
-    &:hover {
-        @extend %cursorPointer;
-        font-weight: bold;
-    }
-    &:active {
-        font-weight: bold;
-    }
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    @extend %transitionAll;
-    @include fontSize(16);
-    @include mediaTablet {
-        @include fontSize(12);
-    }
+    
+    
 }

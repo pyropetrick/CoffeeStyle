@@ -1,4 +1,6 @@
 .shop {
+    padding: 120px 0;
+
     &__description {
         &-wrapper {
             padding: 0 140px;
@@ -15,6 +17,18 @@
             margin-bottom: 20px;
         }
         &-link {
+            @include fontSize(16);
+            color: $colorDiscountPrice;
+            position: relative;
+            padding: 5px;
+            &:hover {
+                @include cursorPointer;
+            }
+            
+            @include mediaTablet {
+                @include fontSize(14);
+            }
+
             &::before {
                 content: '';
                 position: absolute;
@@ -24,19 +38,12 @@
                 height: 2px;
                 opacity: 0;
                 background-color: rgba(162, 95, 75, 0.2);
-                @extend %transitionAll;
+                @include transitionAll;
             }
             &:hover::before {
                 opacity: 1;
             }
-            @include fontSize(16);
-            color: $colorDiscountPrice;
-            position: relative;
-            padding: 5px;
             
-            @include mediaTablet {
-                @include fontSize(14);
-            }
         }
     }
     &__features {
@@ -63,14 +70,16 @@
         }
     }
     &-offer {
+        @include flexX(space-between);
+        gap: 30px;
+
         &__images {
             display: flex;
             gap: 20px;
         }
         &__image {
             &-wrapper {
-                display: flex;
-                flex-direction: column;
+                @include flexDir(column);
                 gap: 20px;
             }
             &--small {
@@ -89,19 +98,15 @@
             &-title {
                 @include fontSize(36);
                 @include LineHeight(50);
-                // width: 300px;
                 margin-bottom: 15px;
             }
             &-text {
                 @include LineHeight(28);
                 margin-bottom: 30px;
-                // width: 300px;
             }
         }
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
+        
     }
 
-    padding: 120px 0;
+    
 }

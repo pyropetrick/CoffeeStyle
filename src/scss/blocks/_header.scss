@@ -1,8 +1,6 @@
 .header {
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexXY(space-between,center);
         padding: 25px 15px;
     }
     &__logo {
@@ -25,15 +23,29 @@
         }
         background-color: #000000;
         border-radius: 50%;
+        padding: 2px;
         text-align: center;
         color: $colorWhite;
     }
     &__list {
+        @include flexCenter;
+
         &-item {
+            margin-right: 30px;
+            padding-bottom: 4px;
+            position: relative;
+            text-transform: uppercase;
+            @include transitionAll;
+            @include fontSize(14);
+            
+            @include mediaTablet {
+                @include fontSize(12);
+            }
+            
+
             &:last-child {
                 margin: 0;
-                display: flex;
-                align-items:center;
+                @include flexY(center);
                 gap: 10px;
             }
             &::before {
@@ -44,9 +56,8 @@
                 bottom: 0;
                 left: 0;
                 opacity: 0;
-                // background-color:rgba(162, 95, 75, 0.3);
                 background-color: #000;
-                @extend %transitionAll;
+                @include transitionAll;
                 
             }
             &:hover::before {
@@ -60,16 +71,8 @@
                 color: #000;
                 font-weight: bold;
             }
-            margin-right: 30px;
-            padding-bottom: 4px;
-            position: relative;
-            text-transform: uppercase;
-            @include fontSize(14);
-            @include mediaTablet {
-                @include fontSize(12);
-            }
-            @extend %transitionAll;
+            
         }
-        @extend %flexCenter;
+        
     }
 }

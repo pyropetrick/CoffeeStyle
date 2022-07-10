@@ -33,8 +33,6 @@ dd {
 // Выставляем основные настройки по-умолчанию для body
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
 }
 
 // Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class
@@ -51,8 +49,10 @@ a {
 
 // Упрощаем работу с изображениями
 img {
-  max-width: 100%;
   display: block;
+  @include mediaMobile {
+    max-width: 100%;
+  }
 }
 
 // Указываем понятную периодичность в потоке данных у article
@@ -71,6 +71,7 @@ select {
 body {
     @include fontStyle($fontKarla, $fontRegular, 18);
     color: $colorPrimary;
+    
     @include mediaTablet {
       @include fontSize(16);
     }
